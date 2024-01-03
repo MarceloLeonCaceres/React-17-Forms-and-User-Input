@@ -11,6 +11,10 @@ export default function Login() {
     const enteredPassword = password.current.value;
 
     console.log(enteredEmail, enteredPassword);
+    // The following line should be avoided because
+    // we should leave React modify the DOM, not 
+    // modify it by ourselves
+    email.current.value = '';
 
   }
 

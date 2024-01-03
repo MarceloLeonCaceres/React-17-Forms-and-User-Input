@@ -7,6 +7,9 @@ export default function Signup() {
         const data = Object.fromEntries(fd.entries());        
         data.acquisition = acquisitionChannel;
         console.log(data);
+
+        //  The following is another way to clear the form
+        // event.target.reset();
         
     }
 
